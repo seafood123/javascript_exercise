@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    function person(name){
+      this.name = name;
+      this.introduce = function(){
+        return "my name is "+this.name;
+      }
+
+    }
+
+    var p1 = new person("김태연");
+    document.write(p1.introduce());
+
+    var p2 = new person("티파니");
+    document.write(p2.introduce());
+    </script>
+  </body>
+</html>
